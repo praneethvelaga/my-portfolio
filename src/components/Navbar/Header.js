@@ -56,9 +56,9 @@ const Header = ({ activeSection }) => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {menuItems.map((item) => (
-                location.pathname === '/' ? (
+                location.pathname === '/' && item.id !== 'home' && item.id !== 'about' ? (
                   <button
-                    key={item.id}
+                    key={item.id} 
                     onClick={() => scrollToSection(item.id)}
                     className={`px-3 py-2 text-sm font-medium transition-colors duration-300 hover:text-blue-400 ${
                       isActive(item) ? 'text-blue-400' : 'text-gray-300'
