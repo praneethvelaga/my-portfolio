@@ -7,7 +7,7 @@ import HomePage from './pages/Home/HomePage';
 import Skills from './pages/Skills/Skills';
 import Projects from './pages/Projects/Projects';
 import Experience from './pages/Experience/Experience';
-import { Contact } from 'lucide-react';
+import Contact from './pages/Contact/Contact';
 
 
 function App() {
