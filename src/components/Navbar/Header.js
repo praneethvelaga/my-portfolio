@@ -36,7 +36,7 @@ const Header = ({ activeSection }) => {
 
   const isActive = (item) => {
     if (location.pathname === item.path) return true;
-    if (location.pathname === '/' && activeSection === item.id) return true;
+    if (location.pathname === '/' ) return true;
     return false;
   };
 
