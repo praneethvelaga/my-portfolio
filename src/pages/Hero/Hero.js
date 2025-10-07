@@ -3,7 +3,7 @@ import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 
 const Hero = () => {
   const scrollToAbout = () => {
-    const aboutSection = document('about');
+    const aboutSection = document.getElementById('about');
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
     }

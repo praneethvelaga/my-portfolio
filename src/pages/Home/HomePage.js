@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../../components/Navbar/Header.js';
 import About from '../About/About.js';
 import Skills from '../Skills/Skills.js';
 import Projects from '../Projects/Projects.js';
