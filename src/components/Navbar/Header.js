@@ -56,7 +56,7 @@ const Header = ({ activeSection }) => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {menuItems.map((item) => (
-                location.pathname === '/' && item.id !== 'home' && item.id !== 'about' ? (
+                location.pathname === '/' ? (
                   <button
                     key={item.id} 
                     onClick={() => scrollToSection(item.id)}
