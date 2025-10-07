@@ -36,9 +36,9 @@ const Header = ({ activeSection }) => {
 
   const isActive = (item) => {
     if (location.pathname === item.path) return true;
-    if (location.pathname === '/' ) return true;
+    if (location.pathname === '/' && activeSection === item.id) return true;
     return false;
-  };
+  };  
 
   return (
     <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
