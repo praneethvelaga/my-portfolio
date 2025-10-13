@@ -26,8 +26,8 @@ const Projects = () => {
       description: 'Beautiful weather dashboard with location-based forecasts, interactive maps, and detailed analytics.',
       image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
       tech: ['Vue.js', 'Chart.js', 'OpenWeather API'],
-      github: 'https://github.com',
-      demo: 'https://example.com',
+      github: 'https://github.com/praneethvelaga/Weather_Dashboard',
+      demo: 'https://weather-dashboarddotin.netlify.app/',
       featured: false
     },
     {
