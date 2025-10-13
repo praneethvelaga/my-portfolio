@@ -4,6 +4,7 @@ import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-rea
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
+    mobile:'',
     email: '',
     subject: '',
     message: ''
@@ -14,7 +15,7 @@ const Contact = () => {
     // Handle form submission here
     console.log('Form submitted:', formData);
     alert('Thank you for your message! I\'ll get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setFormData({ name: '', mobile:'', email: '', subject: '', message: '' });
   };
 
   const handleChange = (e) => {
@@ -141,6 +142,24 @@ const Contact = () => {
                   />
                 </div>
                 <div>
+                  <label htmlFor="mobile" className="block text-sm font-medium text-gray-300 mb-2">
+                    Mobile
+                  </label>
+                  <input
+                    type="number"
+                    id="mobile"
+                    name="mobile"
+                    value={formData.mobile}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-white placeholder-gray-400 appearance-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    placeholder="91+ XXXXX XXXXX"
+                  />
+
+                </div>
+              </div>
+
+              <div className="mb-6">
                   <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                     Email
                   </label>
@@ -155,7 +174,6 @@ const Contact = () => {
                     placeholder="your@email.com"
                   />
                 </div>
-              </div>
 
               <div className="mb-6">
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
